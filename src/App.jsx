@@ -2,7 +2,7 @@ import Navbar from "./component/Navbar";
 import Home from "./component/Home";
 import About from "./component/About";
 import Skills from "./component/Skills";
-import Work from "./component/Work";
+import Education from "./component/Education";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
     <Home />
     <About/>
     <Skills/>
-    <Work/>
+    <Education/>
     </>
   );
 };
