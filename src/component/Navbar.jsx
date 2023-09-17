@@ -11,6 +11,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import "../index.css";
 import { Link } from "react-scroll";
+import resume from "../assets/CONTACT.pdf"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -182,7 +183,8 @@ const Navbar = () => {
           <li className=" w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] bg-white hover: duration-1000 ease-in-out">
             <a
               className="flex justify-between items-center w-full text-black font-bold"
-              href="/"
+              href="https://github.com/LillyKorakot"
+              target="_blank"
             >
               Github <FaGithub size={30} className=" text-black" />
             </a>
@@ -190,17 +192,28 @@ const Navbar = () => {
           <li className=" w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] bg-[#4267B2] hover: duration-1000 ease-in-out">
             <a
               className="flex justify-between items-center w-full text-white font-bold"
-              href="/"
+              href="mailto:korakot.jarunongkran@gmail.com"
             >
+              
               Email <HiOutlineMail size={30} className=" text-white" />
             </a>
           </li>
           <li className=" w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] bg-white hover: duration-1000 ease-in-out">
             <a
               className="flex justify-between items-center w-full text-black font-bold"
-              href="/"
+              href={resume}
+              target="_blank"
             >
               Resume <BsFillPersonLinesFill size={30} className=" text-black" />
+            </a>
+          </li>
+          <li className=" w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] bg-[#4267B2] hover: duration-1000 ease-in-out">
+            <a
+              className="flex justify-between items-center w-full text-white font-bold"
+              href="https://www.linkedin.com/in/korakot-jarunongkran-543068288/"
+              target="_blank"
+            >
+              Resume <FaLinkedin size={30} className=" text-white" />
             </a>
           </li>
         </ul>
