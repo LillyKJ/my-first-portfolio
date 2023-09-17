@@ -6,7 +6,7 @@ import factoryClassroom from "../assets/FactoryClassroom.png";
 
 const Education = () => {
   return (
-    <div className=" w-full md:h-screen bg-[#0a192f] text-gray-300">
+    <div name="education" className=" w-full md:h-screen bg-[#0a192f] text-gray-300">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full ">
         {/* Title */}
         <div className="pb-8">

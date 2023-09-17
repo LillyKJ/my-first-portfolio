@@ -10,10 +10,12 @@ import {
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import "../index.css";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
@@ -24,10 +26,63 @@ const Navbar = () => {
 
       {/* menu  */}
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Contact</li>
+        <li>
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            onClick={() => setSelectedItem("home")}
+            className={selectedItem === "home" ? " border-b-4    " : {}}
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            onClick={() => setSelectedItem("about")}
+            className={selectedItem === "about" ? " border-b-4  " : {}}
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="skills"
+            smooth={true}
+            duration={500}
+            onClick={() => setSelectedItem("skills")}
+            className={selectedItem === "skills" ? " border-b-4  " : {}}
+          >
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="education"
+            smooth={true}
+            duration={500}
+            onClick={() => setSelectedItem("education")}
+            className={selectedItem === "education" ? " border-b-4  " : {}}
+          >
+            {" "}
+            Education{" "}
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="work"
+            smooth={true}
+            duration={500}
+            onClick={() => setSelectedItem("work")}
+            className={selectedItem === "work" ? " border-b-4  " : {}}
+          >
+            {" "}
+            Work{" "}
+          </Link>
+        </li>
       </ul>
 
       {/* Hamburger */}
@@ -42,32 +97,110 @@ const Navbar = () => {
             ? "hidden"
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
+        onClick={() => setSelectedItem("education", "home", "about", "skills")}
+        click
+        hide
+        navbar
       >
-        <li className="py-6 text-4xl">Home</li>
-        <li className="py-6 text-4xl">About</li>
-        <li className="py-6 text-4xl">Skills</li>
-        <li className="py-6 text-4xl">Contact</li>
+        <li className="py-6 text-4xl">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            onClick={() => {
+              setSelectedItem("home");
+              setNav(false);
+            }}
+            className={selectedItem === "home" ? " border-b-4    " : {}}
+          >
+            Home
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            onClick={() => {
+              setSelectedItem("about");
+              setNav(false);
+            }}
+            className={selectedItem === "about" ? " border-b-4  " : {}}
+          >
+            About
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            to="skills"
+            smooth={true}
+            duration={500}
+            onClick={() => {
+              setSelectedItem("skills");
+              setNav(false);
+            }}
+            className={selectedItem === "skills" ? " border-b-4  " : {}}
+          >
+            Skills
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            to="education"
+            smooth={true}
+            duration={500}
+            onClick={() => {
+              setSelectedItem("education");
+              setNav(false);
+            }}
+            className={selectedItem === "education" ? " border-b-4  " : {}}
+          >
+            {" "}
+            Education{" "}
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            to="work"
+            smooth={true}
+            duration={500}
+            onClick={() => {
+              setSelectedItem("work");
+              setNav(false);
+            }}
+            className={selectedItem === "work" ? " border-b-4  " : {}}
+          >
+            {" "}
+            Work{" "}
+          </Link>
+        </li>
       </ul>
 
       {/* Social icons */}
       <div className=" hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className=' w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] bg-white hover: duration-1000 ease-in-out'>
-            <a className='flex justify-between items-center w-full text-black font-bold'
-             href="/">
-              Github <FaGithub size={30} className=' text-black' />
+          <li className=" w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] bg-white hover: duration-1000 ease-in-out">
+            <a
+              className="flex justify-between items-center w-full text-black font-bold"
+              href="/"
+            >
+              Github <FaGithub size={30} className=" text-black" />
             </a>
           </li>
-          <li className=' w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] bg-[#4267B2] hover: duration-1000 ease-in-out'>
-            <a className='flex justify-between items-center w-full text-white font-bold'
-             href="/">
-              Email <HiOutlineMail size={30} className=' text-white' />
+          <li className=" w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] bg-[#4267B2] hover: duration-1000 ease-in-out">
+            <a
+              className="flex justify-between items-center w-full text-white font-bold"
+              href="/"
+            >
+              Email <HiOutlineMail size={30} className=" text-white" />
             </a>
           </li>
-          <li className=' w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] bg-white hover: duration-1000 ease-in-out'>
-            <a className='flex justify-between items-center w-full text-black font-bold'
-             href="/">
-              Resume <BsFillPersonLinesFill size={30} className=' text-black' />
+          <li className=" w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] bg-white hover: duration-1000 ease-in-out">
+            <a
+              className="flex justify-between items-center w-full text-black font-bold"
+              href="/"
+            >
+              Resume <BsFillPersonLinesFill size={30} className=" text-black" />
             </a>
           </li>
         </ul>
