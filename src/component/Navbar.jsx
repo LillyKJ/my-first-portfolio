@@ -73,14 +73,14 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            to="work"
+            to="sideproject"
             smooth={true}
             duration={500}
-            onClick={() => setSelectedItem("work")}
-            className={selectedItem === "work" ? " border-b-4  " : {}}
+            onClick={() => setSelectedItem("sideproject")}
+            className={selectedItem === "sideproject" ? " border-b-4  " : {}}
           >
             {" "}
-            Work{" "}
+            Side project{" "}
           </Link>
         </li>
       </ul>
@@ -161,17 +161,17 @@ const Navbar = () => {
         </li>
         <li className="py-6 text-4xl">
           <Link
-            to="work"
+            to="sideproject"
             smooth={true}
             duration={500}
             onClick={() => {
-              setSelectedItem("work");
+              setSelectedItem("sideproject");
               setNav(false);
             }}
-            className={selectedItem === "work" ? " border-b-4  " : {}}
+            className={selectedItem === "sideproject" ? " border-b-4  " : {}}
           >
             {" "}
-            Work{" "}
+            Side project{" "}
           </Link>
         </li>
       </ul>
