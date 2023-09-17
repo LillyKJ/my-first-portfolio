@@ -1,10 +1,10 @@
 import React from "react";
-import CSSImage from "../assets/Cimg.png";
-import HTML from "../assets/Himg.png";
-import JS from "../assets/Javascript.png";
-import Tailwind from "../assets/Tailwind.png";
-import iconreact from "../assets/React.png";
-import Github from "../assets/Github.png";
+import CSSImage from "../assets/cimg.png";
+import HTML from "../assets/himg.png";
+import JS from "../assets/javascript.png";
+import Tailwind from "../assets/tw.png";
+import iconreact from "../assets/react.png";
+import Github from "../assets/github.png";
 import mongoDB from "../assets/mongoDB.png";
 import nodeJS from "../assets/nodeJS.png";
 

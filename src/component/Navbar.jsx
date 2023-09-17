@@ -3,8 +3,6 @@ import {
   FaBars,
   FaTimes,
   FaGithub,
-  FaLinkedin,
-  FaFacebook,
   FaLinkedinIn,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -213,7 +211,7 @@ const Navbar = () => {
               href="https://www.linkedin.com/in/korakot-jarunongkran-543068288/"
               target="_blank"
             >
-              Resume <FaLinkedin size={30} className=" text-white" />
+              Resume <FaLinkedinIn size={30} className=" text-white" />
             </a>
           </li>
         </ul>
