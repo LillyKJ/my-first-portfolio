@@ -3,6 +3,8 @@ import About from "./component/About";
 import Skills from "./component/Skills";
 import Education from "./component/Education";
 import Navbar from "./component/Navbar"
+import Work from "./component/SideProject";
+import SideProject from "./component/SideProject";
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
     <About/>
     <Skills/>
     <Education/>
+    <SideProject/>
     
     </>
   );
