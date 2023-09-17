@@ -9,7 +9,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import "../index.css";
 import { Link } from "react-scroll";
-import resume from "../assets/CONTACT.pdf"
+import resume from "../assets/contact.pdf"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
