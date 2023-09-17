@@ -1,13 +1,12 @@
 import React from "react";
-import CSS from "../assets/CSS.png";
+import CSSImage from "../assets/CSS.png";
 import HTML from "../assets/HTML.png";
 import JS from "../assets/Javascript.png";
 import Tailwind from "../assets/Tailwind.png";
 import iconreact from "../assets/React.png";
-import Github from "../assets/Github.png"
-import mongoDB from "../assets/mongoDB.png"
-import nodeJS from "../assets/nodeJS.png"
-
+import Github from "../assets/Github.png";
+import mongoDB from "../assets/mongoDB.png";
+import nodeJS from "../assets/nodeJS.png";
 
 const Skills = () => {
   return (
@@ -23,44 +22,55 @@ const Skills = () => {
           </p>
         </div>
         {/* container of icon */}
-        <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-14'>
-        <div className='shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5'>
+        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-14">
+          <div className="shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5">
             <img className=" w-20 mx-auto py-5" src={Github} alt="HTML icon" />
             <p>GITHUB</p>
           </div>
-          <div className='shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5'>
+          <div className="shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5">
             <img className=" w-20 mx-auto py-5" src={HTML} alt="HTML icon" />
             <p>HTML</p>
           </div>
-          <div className='shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5'>
-            <img className=" w-20 mx-auto py-5" src={CSS} alt="HTML icon" />
+          <div className="shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5">
+            <img className=" w-20 mx-auto py-5" src={CSSImage} alt="HTML icon" />
             <p>CSS</p>
           </div>
-          <div className='shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5'>
-            <img className=" w-20 mx-auto py-5" src={Tailwind} alt="HTML icon" />
+          <div className="shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5">
+            <img
+              className=" w-20 mx-auto py-5"
+              src={Tailwind}
+              alt="HTML icon"
+            />
             <p>Tailwind</p>
           </div>
-          <div className='shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5'>
+          <div className="shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5">
             <img className=" w-20 mx-auto py-5" src={JS} alt="HTML icon" />
             <p>Javascript</p>
           </div>
-          <div className='shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5'>
-            <img className=" w-20 mx-auto py-5" src={iconreact} alt="HTML icon" />
+          <div className="shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5">
+            <img
+              className=" w-20 mx-auto py-5"
+              src={iconreact}
+              alt="HTML icon"
+            />
             <p>REACT</p>
           </div>
-          <div className='shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5'>
-            <img className=" w-20 mx-auto py-5" src="https://cdn.thenewstack.io/media/2021/12/d9fd0fdd-screen-shot-2021-12-20-at-11.47.03-am.png" alt="HTML icon" />
+          <div className="shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5">
+            <img
+              className=" w-20 mx-auto py-5"
+              src="https://cdn.thenewstack.io/media/2021/12/d9fd0fdd-screen-shot-2021-12-20-at-11.47.03-am.png"
+              alt="HTML icon"
+            />
             <p>Supabase</p>
           </div>
-          <div className='shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5'>
+          <div className="shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5">
             <img className=" w-20 mx-auto py-5" src={mongoDB} alt="HTML icon" />
             <p>mongoDB</p>
           </div>
-          <div className='shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5'>
+          <div className="shadow-md shadow-gray-600 rounded-full hover:scale-110 duration-500 py-5">
             <img className=" w-20 mx-auto py-5" src={nodeJS} alt="HTML icon" />
             <p>nodeJS</p>
           </div>
-
         </div>
       </div>
     </div>
