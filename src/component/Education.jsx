@@ -1,7 +1,7 @@
 import React from "react";
 import techup from "../assets/techup.png";
 import kmitl from "../assets/kmitl.png";
-import unilever from "../assets/unilever.jpg";
+import unilever from "../assets/Unilever.jpg";
 import factoryClassroom from "../assets/fc.png";
 
 const Education = () => {
