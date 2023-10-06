@@ -9,7 +9,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import "../index.css";
 import { Link } from "react-scroll";
-import resume from "../assets/CONTACT.pdf"
+import resume from "../assets/korakot.pdf"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -211,7 +211,7 @@ const Navbar = () => {
               href="https://www.linkedin.com/in/korakot-jarunongkran-543068288/"
               target="_blank"
             >
-              Resume <FaLinkedinIn size={30} className=" text-white" />
+              Linkedin  <FaLinkedinIn size={30} className=" text-white" />
             </a>
           </li>
         </ul>
